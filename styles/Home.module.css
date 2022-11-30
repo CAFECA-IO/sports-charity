@@ -124,6 +124,7 @@
     background: #111;
   }
   .logo img {
-    filter: invert(1);
+    margin-left: 20px;
+    transform: scale(1.8);
   }
 }
