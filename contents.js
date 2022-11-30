@@ -9,6 +9,10 @@ const cardListContent = {
   
 }
 
+const articleListContent = {
+
+}
+
 const page1 = {
   header: [
     { component: "image", content: "" },
@@ -20,9 +24,16 @@ const page1 = {
   main: [
     { component: "banner", content: ["", "", "", "", ""] },
     { component: "title", content: "latest activities" },
-    { component: "card-list", content: cardListContent }
+    { component: "card-list", content: cardListContent },
+    { component: "title", content: "news" },
+    { component: "article-list", content: articleListContent },
   ],
-  footer: []
+  footer: [
+    { component: "image", content: "" },
+    { component: "text", content: "" },
+    { component: "copyright" },
+    { component: "version" },
+  ]
 };
 
 const page2 = {
