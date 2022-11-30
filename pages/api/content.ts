@@ -11,3 +11,25 @@ export default function handler(
 ) {
   res.status(200).json({ name: 'John Doe' })
 }
+
+const page1 = {
+  header: [
+    { component: "image", content: "" },
+    { component: "menu", content: [] },
+    { component: "", content: []}
+  ],
+  main: [],
+  footer: []
+};
+
+const page2 = {
+
+};
+
+const page3 = {
+
+};
+
+const contents = [
+  page1, page2, page3
+];
