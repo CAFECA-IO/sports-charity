@@ -1,15 +1,71 @@
 .container {
-  padding: 0 2rem;
+  padding: 0;
+}
+
+.header {
+  width: auto;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f7f7;
+  padding: 0;
+}
+
+.logo {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header li {
+  margin-left: 5rem;
+}
+
+.header a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #646f71;
+}
+
+.header a:hover,
+.header a:active,
+.header a.active {
+  color: #19282b;
 }
 
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #f2f7f7;
+}
+
+.flexslider {
+  display: flex;
+  align-items: center;
+  background-color: #e4eedb;
+}
+
+.flexslider img {
+  padding: 3% 0;
+  max-width: 100%;
+}
+
+.events h2 {
+  margin-top: 3rem;
+  margin-left: 5rem;
 }
 
 .footer {
@@ -70,42 +126,48 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 100%;
 }
 
 .card {
-  margin: 1rem;
-  padding: 1.5rem;
+  margin: 1rem 3rem 1rem;
+  padding: 1rem;
   text-align: left;
   color: inherit;
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  max-width: 250px;
+}
+
+.card img {
+  padding: 0;
+  max-width: 100%;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  border-style: groove;
 }
 
 .card h2 {
   margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  color: #19282b;
+}
+.card h4 {
+  font-size: 0.5rem;
+  background-color: #647a7d;
+  color: white;
+  text-align: center;
 }
 
 .card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 0.25;
+  color: #646f71;
 }
 
 @media (max-width: 600px) {

@@ -11,53 +11,100 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <header className={styles.header}>
+        <nav>
+          <ul>
+            <li>
+              <Image
+                className={styles.logo}
+                src="/green.png"
+                alt="OMNI SPORTS Logo"
+                width={150}
+                height={70}
+              />
+            </li>
+            <li>
+              <a href="">活動專區</a>
+            </li>
+            <li>
+              <a href="">公告專區</a>
+            </li>
+            <li>
+              <a href="">運動統計</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <span className={styles.flexslider}>
+          <img src="/green.png" alt="2021 麥寮第一屆馬拉松活動" />
+        </span>
 
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
+        <div className={styles.events}>
+          <h2>最新活動</h2>
+          <div className={styles.grid}>
+            <a href="" className={styles.card}>
+              <img src="/green.png" alt=""></img>
+              <h2>LINE FRIENDS 音樂路跑</h2>
+              <p>這個路跑有配樂</p>
+              <h4>其他</h4>
+            </a>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+            <a href="" className={styles.card}>
+              <img src="/green.png" alt=""></img>
+              <h2>運動 x 科技 x 設計 系列講座</h2>
+              <p></p>
+              <h4>講座</h4>
+            </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+            <a href="" className={styles.card}>
+              <img src="/green.png" alt=""></img>
+              <h2>台北國際運動及健身展</h2>
+              <p></p>
+              <h4>展覽</h4>
+            </a>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+            <a href="" className={styles.card}>
+              <img src="/green.png" alt=""></img>
+              <h2>運動星球能量營</h2>
+              <p></p>
+              <h4>課程</h4>
+            </a>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            <a href="" className={styles.card}>
+              <img src="/green.png" alt=""></img>
+              <h2>向海致敬-區域性水域體驗活動</h2>
+              <p></p>
+              <h4>體驗</h4>
+            </a>
+
+            <a href="" className={styles.card}>
+              <img src="/green.png" alt=""></img>
+              <h2>黃阿瑪要跑不跑的路跑</h2>
+              <p></p>
+              <h4>其他</h4>
+            </a>
+          </div>
+        </div>
+
+        <div className={styles.news}>
+          <h2>最新消息</h2>
+          <div className={styles.grid}>
+            <a href="" className={styles.newsbox}>
+              <img src="/green.png" alt=""></img>
+              <h2>標題</h2>
+              <p>內容</p>
+              <h4>閱讀全文 </h4>
+            </a>
+          </div>
         </div>
       </main>
 
       <footer className={styles.footer}>
         <a href="https://cafeca.io" target="_blank" rel="noopener noreferrer">
           Powered by{" "}
-          <span className={styles.logo}>
+          <span>
             <Image src="/cafeca.svg" alt="CAFECA Logo" width={72} height={16} />
           </span>
         </a>
