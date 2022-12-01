@@ -1,0 +1,44 @@
+.footer {
+  flex-direction: row;
+  padding: 2rem 2rem;
+
+  justify-content: center;
+  align-items: center;
+  background-color: #647a7d;
+}
+
+.footer a {
+  width: 100%;
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+}
+
+.logobox {
+  width: auto;
+  height: 150px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+
+  color: white;
+  font-weight: bold;
+}
+
+.textarea {
+  margin-left: 4rem;
+}
+
+.textarea p,
+.textarea a {
+  padding: 0;
+  text-align: left;
+  font-size: 0.25rem;
+}

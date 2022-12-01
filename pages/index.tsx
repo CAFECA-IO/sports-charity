@@ -1,10 +1,10 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 import MainNavigation from "./components/header/main_navigation";
 import EventList from "./components/events/event_list";
 import NewsList from "./components/news/news_list";
+import Footer from "./components/footer/footer";
 
 export default function Home() {
   return (
@@ -27,19 +27,15 @@ export default function Home() {
         <div>
           <EventList />
         </div>
+
         <div>
           <NewsList />
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        <a href="https://cafeca.io" target="_blank" rel="noopener noreferrer">
-          Powered by{" "}
-          <span>
-            <Image src="/cafeca.svg" alt="CAFECA Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
