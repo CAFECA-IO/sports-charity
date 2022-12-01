@@ -2,6 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
+import MainNavigation from "./components/header/main_navigation";
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -11,30 +13,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className={styles.header}>
-        <nav>
-          <ul>
-            <li>
-              <Image
-                className={styles.logo}
-                src="/green.png"
-                alt="OMNI SPORTS Logo"
-                width={150}
-                height={70}
-              />
-            </li>
-            <li>
-              <a href="">活動專區</a>
-            </li>
-            <li>
-              <a href="">公告專區</a>
-            </li>
-            <li>
-              <a href="">運動統計</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <div>
+        <MainNavigation />
+      </div>
 
       <main className={styles.main}>
         <span className={styles.flexslider}>
