@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 
 import MainNavigation from "./components/header/main_navigation";
 import EventList from "./components/events/event_list";
+import NewsList from "./components/news/news_list";
 
 export default function Home() {
   return (
@@ -26,17 +27,8 @@ export default function Home() {
         <div>
           <EventList />
         </div>
-
-        <div className={styles.news}>
-          <h2>最新消息</h2>
-          <div className={styles.grid}>
-            <a href="" className={styles.newsbox}>
-              <img src="/green.png" alt=""></img>
-              <h2>標題</h2>
-              <p>內容</p>
-              <h4>閱讀全文 </h4>
-            </a>
-          </div>
+        <div>
+          <NewsList />
         </div>
       </main>
 
