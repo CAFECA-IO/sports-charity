@@ -1,68 +1,47 @@
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-import type { GetStaticProps, InferGetStaticPropsType } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import { useTranslation, Trans } from 'next-i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import Sample from '../components/sample/sample'
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
-type Props = {
-  // Add custom props here
-}
+import MainNavigation from "../components/header/main_navigation";
+import EventList from "../components/events/event_list";
+import NewsList from "../components/news/news_list";
+import Footer from "../components/footer/footer";
 
-const Home = () => {
-  const sampleList = new Array(3).fill(0).map(() => {
-    return (<Sample></Sample>)
-  })
-  const router = useRouter()
-  const { t } = useTranslation('common')
-  const changeTo = router.locale === 'zh' ? 'en' : 'zh'
-
+export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
         <title>SportsTW</title>
         <meta name="description" content="Sports Public Welfare Platform" />
         <link rel="icon" href="/favicon.ico" />
-        <Link href="/" locale={changeTo}>
-          <button>{t('change-locale', { changeTo })}</button>
-        </Link>
       </Head>
 
+      <div>
+        <MainNavigation />
+      </div>
+
       <main className={styles.main}>
-        {sampleList}
-        <h1 className={styles.title}>
-          {t('greeting')} to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <span className={styles.flexslider}>
+          <Image
+            src="/green.png"
+            alt="2021 麥寮第一屆馬拉松活動"
+            width="100"
+            height="100"
+          />
+        </span>
+
+        <div>
+          <EventList />
+        </div>
+
+        <div>
+          <NewsList />
+        </div>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://cafeca.io"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/cafeca.svg" alt="CAFECA Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <div>
+        <Footer />
+      </div>
     </div>
-  )
+  );
 }
-
-export const getStaticProps: GetStaticProps<Props> = async ({
-  locale,
-}) => ({
-  props: {
-    ...(await serverSideTranslations(locale ?? 'en', [
-      'common',
-      'footer',
-    ])),
-  },
-})
-
-export default Home

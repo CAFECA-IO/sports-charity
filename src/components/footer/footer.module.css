@@ -1,0 +1,75 @@
+.footer {
+  flex-direction: row;
+
+  height: 322px;
+
+  background-color: #647a7d;
+}
+
+.footer a {
+  width: 100%;
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.grid {
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.logobox {
+  width: auto;
+  height: 140px;
+  margin-left: 140px;
+  margin-top: 120px;
+
+  display: flex;
+  align-items: center;
+
+  color: white;
+  font-weight: bold;
+}
+
+.textarea {
+  margin-left: 100px;
+}
+
+.textarea p,
+.textarea a {
+  padding: 0;
+  text-align: left;
+  font-size: 0.25rem;
+}
+
+.copyrightbox {
+  width: auto;
+  display: flex;
+  align-items: flex-end;
+}
+
+.copyrightbox a {
+  text-align: center;
+  font-size: 0.25rem;
+  letter-spacing: 0.16px;
+  color: #ffffff;
+  opacity: 1;
+
+  white-space: nowrap;
+}
+
+.copyrightbox a :hover {
+  color: pink;
+}
+
+.copyrightbox p {
+  display: inline-block;
+  font-size: 0.25rem;
+  color: #ffffff;
+  opacity: 1;
+
+  white-space: nowrap;
+}
