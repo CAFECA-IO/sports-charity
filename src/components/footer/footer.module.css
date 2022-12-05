@@ -8,7 +8,7 @@
 
 .footer a {
   display: flex;
-  padding: 0;
+  padding: 1%;
   justify-content: center;
   align-items: baseline;
   color: white;
@@ -53,24 +53,26 @@
 }
 
 .copyrightbox a {
+  padding: 0;
   text-align: center;
-  font-size: 0.25rem;
+  font: normal normal medium 16px/21px Noto Sans TC;
   letter-spacing: 0.16px;
   color: #ffffff;
-  opacity: 1;
 
-  margin-right: 60px;
+  margin-right: 65px;
   white-space: nowrap;
+
+  transition: 0.3s;
 }
 
-.copyrightbox a :hover .copyrightbox a:active,
-.copyrightbox a.active {
-  color: pink;
+.copyrightbox a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .copyrightbox p {
-  display: inline-block;
-  font-size: 0.25rem;
+  text-align: center;
+  font: normal normal medium 12px/21px Noto Sans TC;
+  letter-spacing: 0.12px;
   color: #ffffff;
   opacity: 1;
   margin-right: 230px;
