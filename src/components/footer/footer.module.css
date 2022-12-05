@@ -1,33 +1,33 @@
 .footer {
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
 
   height: 322px;
-
   background-color: #647a7d;
 }
 
 .footer a {
-  width: 100%;
   display: flex;
-  margin-top: 1rem;
+  padding: 1%;
   justify-content: center;
-  align-items: flex-end;
+  align-items: baseline;
+  color: white;
 }
 
-.grid {
+.flexbox {
   width: auto;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
+  align-content: stretch;
+  justify-content: center;
 }
 
 .logobox {
+  padding: 5% 5% 1%;
   width: auto;
-  height: 140px;
-  margin-left: 140px;
-  margin-top: 120px;
+  height: 250px;
 
   display: flex;
+  justify-content: flex-start;
   align-items: center;
 
   color: white;
@@ -35,7 +35,7 @@
 }
 
 .textarea {
-  margin-left: 100px;
+  margin-left: 3rem;
 }
 
 .textarea p,
@@ -48,7 +48,8 @@
 .copyrightbox {
   width: auto;
   display: flex;
-  align-items: flex-end;
+  align-items: baseline;
+  justify-content: flex-end;
 }
 
 .copyrightbox a {
@@ -58,10 +59,12 @@
   color: #ffffff;
   opacity: 1;
 
+  margin-right: 60px;
   white-space: nowrap;
 }
 
-.copyrightbox a :hover {
+.copyrightbox a :hover .copyrightbox a:active,
+.copyrightbox a.active {
   color: pink;
 }
 
@@ -70,6 +73,6 @@
   font-size: 0.25rem;
   color: #ffffff;
   opacity: 1;
-
+  margin-right: 230px;
   white-space: nowrap;
 }
