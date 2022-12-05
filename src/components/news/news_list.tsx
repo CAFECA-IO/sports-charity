@@ -12,9 +12,10 @@ function NewsList() {
             <img src="/news-1.png" alt=""></img>
           </div>
           <div className={styles.textarea}>
-            <h2>標題1</h2>
+            <h2>最新消息標題</h2>
             <p>
-              容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <h4>
               閱讀全文{" "}
@@ -33,9 +34,10 @@ function NewsList() {
             <img src="/news-2.png" alt=""></img>
           </div>
           <div className={styles.textarea}>
-            <h2>標題2</h2>
+            <h2>最新消息標題</h2>
             <p>
-              內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <h4>
               閱讀全文{" "}
@@ -54,9 +56,10 @@ function NewsList() {
             <img src="/news-3.png" alt=""></img>
           </div>
           <div className={styles.textarea}>
-            <h2>標題3</h2>
+            <h2>最新消息標題</h2>
             <p>
-              內容內容內容內容內容內內容內容內容內容容內容內容內容內容內容內容內容內容
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <h4>
               閱讀全文{" "}
@@ -75,8 +78,11 @@ function NewsList() {
             <img src="/news-4.png" alt=""></img>
           </div>
           <div className={styles.textarea}>
-            <h2>標題4</h2>
-            <p>內容內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+            <h2>最新消息標題</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
             <h4>
               閱讀全文{" "}
               <Image
