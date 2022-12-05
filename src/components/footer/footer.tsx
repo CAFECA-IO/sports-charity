@@ -7,7 +7,7 @@ function Footer() {
     <footer className={styles.footer}>
       <div className={styles.logobox}>
         <Image
-          src="/green.png"
+          src="/omni_logo.png"
           alt="OMNI SPORTS Logo"
           width={230}
           height={100}
@@ -25,7 +25,7 @@ function Footer() {
         <p>© 2020 Mockup. All Rights Reserved.</p>
       </div>
       <a href="https://cafeca.io" target="_blank" rel="noopener noreferrer">
-        Powered by
+        Powered by{" "}
         <Image src="/cafeca.svg" alt="CAFECA Logo" width={72} height={20} />
       </a>
     </footer>

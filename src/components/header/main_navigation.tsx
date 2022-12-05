@@ -11,7 +11,7 @@ function MainNavigation() {
             <li>
               <Image
                 className={styles.logo}
-                src="/green.png"
+                src="/omni_logo.png"
                 alt="OMNI SPORTS Logo"
                 width={150}
                 height={70}
@@ -68,7 +68,7 @@ function MainNavigation() {
             <li>
               <div className={styles.subnav}>
                 <button className={styles.menubtn}>
-                  Language
+                  Language{" "}
                   <Image
                     className={styles.menuarrow}
                     src="/arrowdown.svg"

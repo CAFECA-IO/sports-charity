@@ -23,10 +23,10 @@ export default function Home() {
       <main className={styles.main}>
         <span className={styles.flexslider}>
           <Image
-            src="/green.png"
+            src="/placement_area.png"
             alt="2021 麥寮第一屆馬拉松活動"
-            width="100"
-            height="100"
+            width="1920"
+            height="800"
           />
         </span>
 

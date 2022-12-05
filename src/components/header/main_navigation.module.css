@@ -6,10 +6,6 @@
   display: flex;
 }
 
-.logo {
-  font-weight: bold;
-}
-
 .header ul {
   width: auto;
   list-style-type: none;
