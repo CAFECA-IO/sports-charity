@@ -57,8 +57,8 @@ function MainNavigation() {
                 <Image
                   src="/search.svg"
                   alt="search btn"
-                  width={17}
-                  height={17}
+                  width={20}
+                  height={20}
                 />
               </button>
             </div>

@@ -50,19 +50,21 @@
 }
 
 .searchbar {
+  width: 180px;
+  height: 44px;
+  padding: 10px;
   display: inline-flex;
   background-color: white;
   align-items: center;
 
-  padding: 3%;
   text-decoration: none;
   border: 1px solid #14292b;
   border-radius: 50px;
 }
 
 .searchbar input {
+  width: 100%;
   outline: none;
-  margin-left: 5px;
   border: none;
 }
 
@@ -75,6 +77,7 @@
   background-color: transparent;
   cursor: pointer;
   float: right;
+  margin-right: 3px;
 }
 
 .menubtn {
