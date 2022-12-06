@@ -24,14 +24,6 @@
   }
 }
 
-.flexslider {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: #e4eedb;
-}
-
 @media (max-width: 600px) {
   .grid {
     width: 100%;

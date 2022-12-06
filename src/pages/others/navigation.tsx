@@ -1,9 +1,6 @@
 import styles from "../../styles/navigation.module.css";
 import Image from "next/image";
 
-import MainNavigation from "../../components/header/main_navigation";
-import Footer from "../../components/footer/footer";
-
 function NavPage() {
   return (
     <div>
@@ -49,19 +46,19 @@ function NavPage() {
               <p>1. 活動專區</p>
               <ul>
                 <li>
-                  <a href="">1-1. 講座</a>
+                  <a href="/event">1-1. 講座</a>
                 </li>
                 <li>
-                  <a href="">1-2. 體驗</a>
+                  <a href="/event">1-2. 體驗</a>
                 </li>
                 <li>
-                  <a href="">1-3. 課程</a>
+                  <a href="/event">1-3. 課程</a>
                 </li>
                 <li>
-                  <a href="">1-4. 展覽</a>
+                  <a href="/event">1-4. 展覽</a>
                 </li>
                 <li>
-                  <a href="">1-5. 其他</a>
+                  <a href="/event">1-5. 其他</a>
                 </li>
               </ul>
             </div>
@@ -70,10 +67,10 @@ function NavPage() {
               <p>2. 公告專區</p>
               <ul>
                 <li>
-                  <a href="">2-1. 最新消息</a>
+                  <a href="/news">2-1. 最新消息</a>
                 </li>
                 <li>
-                  <a href="">2-2. 系統公告</a>
+                  <a href="/news">2-2. 系統公告</a>
                 </li>
               </ul>
             </div>
@@ -82,10 +79,10 @@ function NavPage() {
               <p>3. 運動統計</p>
               <ul>
                 <li>
-                  <a href="">3-1. 文本</a>
+                  <a href="/sport">3-1. 文本</a>
                 </li>
                 <li>
-                  <a href="">3-2. 圖表</a>
+                  <a href="/sport">3-2. 圖表</a>
                 </li>
               </ul>
             </div>
@@ -94,16 +91,16 @@ function NavPage() {
               <p>4. 其他資訊</p>
               <ul>
                 <li>
-                  <a href="">4-1. 全站搜尋</a>
+                  <a href="/others">4-1. 全站搜尋</a>
                 </li>
                 <li>
-                  <a href="">4-2. 網站導覽</a>
+                  <a href="/others/navigation">4-2. 網站導覽</a>
                 </li>
                 <li>
-                  <a href="">4-3. 隱私權</a>
+                  <a href="/others">4-3. 隱私權</a>
                 </li>
                 <li>
-                  <a href="">4-4. 政府網站資料開放宣告</a>
+                  <a href="/others">4-4. 政府網站資料開放宣告</a>
                 </li>
               </ul>
             </div>
