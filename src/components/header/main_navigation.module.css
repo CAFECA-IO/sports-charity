@@ -132,6 +132,16 @@
 
   min-width: 150px;
   z-index: 1;
+  animation: fadein 0.5s ease;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
 }
 
 .subnavcontent a {
