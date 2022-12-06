@@ -1,19 +1,28 @@
 import Image from "next/image";
+import Link from "next/link";
+import Head from "next/head";
 
 import styles from "./main_navigation.module.css";
 
 function MainNavigation() {
   return (
     <header className={styles.header}>
+      <Head>
+        <title>SportsTW</title>
+        <meta name="description" content="Sports Public Welfare Platform" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <nav className={styles.navl}>
         <ul>
           <li>
-            <Image
-              src="/omni_logo.png"
-              alt="OMNI SPORTS Logo"
-              width={150}
-              height={70}
-            />
+            <Link href="/">
+              <Image
+                src="/omni_logo.png"
+                alt="OMNI SPORTS Logo"
+                width={150}
+                height={70}
+              />
+            </Link>
           </li>
           <li>
             <div className={styles.subnav}>
@@ -64,7 +73,9 @@ function MainNavigation() {
             </div>
           </li>
           <li>
-            <button className={styles.menubtn}>網頁導覽</button>
+            <button className={styles.menubtn}>
+              <Link href="/others/navigation">網頁導覽</Link>
+            </button>
           </li>
           <li>
             <div className={styles.subnav}>

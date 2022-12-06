@@ -1,7 +1,6 @@
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
-import Layout from "../components/layout/layout";
 import MainNavigation from "../components/header/main_navigation";
 import EventList from "../components/events/event_list";
 import NewsList from "../components/news/news_list";
@@ -10,11 +9,9 @@ import Footer from "../components/footer/footer";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <div>
-        <MainNavigation />
-      </div>
+      <MainNavigation />
 
-      <Layout>
+      <main className={styles.main}>
         <span className={styles.flexslider}>
           <Image
             src="/placement_area.png"
@@ -31,7 +28,7 @@ export default function Home() {
         <div>
           <NewsList />
         </div>
-      </Layout>
+      </main>
 
       <div>
         <Footer />
