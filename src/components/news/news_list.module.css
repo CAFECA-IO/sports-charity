@@ -11,17 +11,16 @@
   margin-left: 194px;
 }
 
-.grid {
+.flexbox {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 .newsbox {
   width: 528px;
   height: 163px;
-  margin: 90px 0px 100px 90px;
+  margin: 90px 0px 100px 275px;
   display: flex;
   flex-direction: row;
   align-items: center;

@@ -6,7 +6,7 @@ function NewsList() {
   return (
     <div className={styles.news}>
       <h2>最新消息</h2>
-      <div className={styles.grid}>
+      <div className={styles.flexbox}>
         <a href="" className={styles.newsbox}>
           <div className={styles.imgbox}>
             <img src="/news-1.png" alt=""></img>
