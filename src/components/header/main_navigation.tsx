@@ -28,11 +28,11 @@ function MainNavigation() {
             <div className={styles.subnav}>
               <button className={styles.subbtn}>活動專區</button>
               <div className={styles.subnavcontent}>
-                <a href="">講座</a>
-                <a href="">體驗</a>
-                <a href="">課程</a>
-                <a href="">展覽</a>
-                <a href="">其他</a>
+                <a href="/event">講座</a>
+                <a href="/event">體驗</a>
+                <a href="/event">課程</a>
+                <a href="/event">展覽</a>
+                <a href="/event">其他</a>
               </div>
             </div>
           </li>
@@ -40,8 +40,8 @@ function MainNavigation() {
             <div className={styles.subnav}>
               <button className={styles.subbtn}>公告專區</button>
               <div className={styles.subnavcontent}>
-                <a href="">最新消息</a>
-                <a href="">系統公告</a>
+                <a href="/news">最新消息</a>
+                <a href="/news">系統公告</a>
               </div>
             </div>
           </li>
@@ -49,8 +49,8 @@ function MainNavigation() {
             <div className={styles.subnav}>
               <button className={styles.subbtn}>運動統計</button>
               <div className={styles.subnavcontent}>
-                <a href="">文本</a>
-                <a href="">圖表</a>
+                <a href="/sport">文本</a>
+                <a href="/sport">圖表</a>
               </div>
             </div>
           </li>
@@ -73,9 +73,9 @@ function MainNavigation() {
             </div>
           </li>
           <li>
-            <button className={styles.menubtn}>
-              <Link href="/others/navigation">網頁導覽</Link>
-            </button>
+            <Link href="/others/navigation">
+              <button className={styles.menubtn}>網頁導覽 </button>
+            </Link>
           </li>
           <li>
             <div className={styles.subnav}>
