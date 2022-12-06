@@ -7,8 +7,6 @@ import Footer from "../../components/footer/footer";
 function NavPage() {
   return (
     <div>
-      <MainNavigation />
-
       <main className={styles.main}>
         <span className={styles.banner}>
           <nav className={styles.breadcrumb}>
@@ -112,8 +110,6 @@ function NavPage() {
           </div>
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 }

@@ -9,8 +9,6 @@ import Footer from "../components/footer/footer";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <MainNavigation />
-
       <main className={styles.main}>
         <span className={styles.flexslider}>
           <Image
@@ -29,10 +27,6 @@ export default function Home() {
           <NewsList />
         </div>
       </main>
-
-      <div>
-        <Footer />
-      </div>
     </div>
   );
 }
