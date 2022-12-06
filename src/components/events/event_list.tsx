@@ -1,3 +1,6 @@
+import EventItems from "./event_items";
+import Image from "next/image";
+
 import styles from "./event_list.module.css";
 
 function EventList() {
@@ -7,7 +10,7 @@ function EventList() {
       <div className={styles.grid}>
         <a href="" className={styles.card}>
           <div className={styles.imgbox}>
-            <img src="/Image-1.png" alt=""></img>
+            <img src="/Image-1.png" alt="event1"></img>
           </div>
           <h2>LINE FRIENDS 音樂路跑</h2>
           <p className={styles.intro}>
