@@ -3,6 +3,7 @@ import Flexslider from "../components/flexslider";
 import EventList from "../components/events/event_list";
 import NewsList from "../components/news/news_list";
 
+type DUMMY_DATA = any;
 const DUMMY_DATA = [
   {
     id: "event1",
