@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import styles from "../../styles/navigation.module.css";
+import styles from "../../styles/indexpages.module.css";
 
 function NavPage() {
   return (
@@ -42,8 +42,8 @@ function NavPage() {
             Alt + C：中間主要內容顯示區，此區塊呈現各網頁的資訊內容。
             <br /> Alt + B：下方選單連結區，此區塊列有功能選單連結。
           </p>
-          <div className={styles.flexbox}>
-            <div className={styles.ticket}>
+          <div className={styles.tablebox}>
+            <div className={styles.table}>
               <p>1. 活動專區</p>
               <ul>
                 <li>
@@ -64,7 +64,7 @@ function NavPage() {
               </ul>
             </div>
 
-            <div className={styles.ticket}>
+            <div className={styles.table}>
               <p>2. 公告專區</p>
               <ul>
                 <li>
@@ -76,7 +76,7 @@ function NavPage() {
               </ul>
             </div>
 
-            <div className={styles.ticket}>
+            <div className={styles.table}>
               <p>3. 運動統計</p>
               <ul>
                 <li>
@@ -88,7 +88,7 @@ function NavPage() {
               </ul>
             </div>
 
-            <div className={styles.ticket}>
+            <div className={styles.table}>
               <p>4. 其他資訊</p>
               <ul>
                 <li>
