@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import EventItems from "./event_items";
 import styles from "./event_list.module.css";
-import contents from "../../../contents.js";
+import contents from "../../../contents";
 
 /* const data = [
   { title: "event title", content: "event content", type: "etc" },

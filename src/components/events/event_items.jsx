@@ -1,12 +1,6 @@
 import styles from "./event_list.module.css";
 
-function EventItems(props: {
-  id: string;
-  title: string;
-  image: string;
-  description: string;
-  class: string;
-}) {
+function EventItems() {
   return (
     <a href="" className={styles.card}>
       <div className={styles.imgbox}>

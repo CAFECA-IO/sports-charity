@@ -15,6 +15,16 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/components/events/event_list.jsx",
+    "src/components/events/event_items.jsx",
+    "src/components/flexslider.tsx",
+    "src/components/news/news_list.jsx",
+    "src/pages/event/index.jsx",
+    "src/pages/news/index.jsx"
+  ],
   "exclude": ["node_modules"]
 }
