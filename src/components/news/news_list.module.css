@@ -1,5 +1,6 @@
 .news {
   padding: 0;
+  margin-top: 100px;
 }
 
 .news h2 {
@@ -7,11 +8,11 @@
   font: normal normal bold 28px/25px Noto Sans TC;
   letter-spacing: 0.56px;
   color: #14292b;
-  margin-top: 110px;
   margin-left: 194px;
 }
 
 .flexbox {
+  padding: 60px 0px 230px 200px;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -20,11 +21,10 @@
 .newsbox {
   width: 528px;
   height: 163px;
-  margin: 90px 0px 100px 275px;
+  margin: 0px 200px 100px 0px;
   display: flex;
   flex-direction: row;
-  align-items: center;
-
+  align-content: center;
   text-align: left;
   background-color: none;
   text-decoration: none;
@@ -53,6 +53,10 @@
 }
 .newsbox:hover h4 {
   color: #6d3938;
+}
+.newsbox:hover .arrowchange {
+  display: block;
+  background: url("/arrowrightred.svg");
 }
 
 .textarea {
