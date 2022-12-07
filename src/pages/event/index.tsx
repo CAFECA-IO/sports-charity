@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import styles from "../../styles/eventindex.module.css";
+import styles from "../../styles/indexpages.module.css";
 
 function AllEventsPage() {
   return (
@@ -15,9 +15,29 @@ function AllEventsPage() {
               width={10}
               height={10}
             ></Image>
-            <a href="/others">活動專區</a>
+            <a href="/event">活動專區</a>
           </nav>
           <h1>活動專區</h1>
+
+          <nav className={styles.indexevent}>
+            <ul>
+              <li>
+                <a href="">講座</a>
+              </li>
+              <li>
+                <a href="">體驗</a>
+              </li>
+              <li>
+                <a href="">課程</a>
+              </li>
+              <li>
+                <a href="">展覽</a>
+              </li>
+              <li>
+                <a href="">其他</a>
+              </li>
+            </ul>
+          </nav>
         </span>
         <div className={styles.eventslist}>
           <div className={styles.searchbar}>
