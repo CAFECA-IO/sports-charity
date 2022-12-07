@@ -1,37 +1,35 @@
 .events {
   padding: 0;
+  margin-top: 56px;
 }
 
 .events h2 {
-  margin-top: 56px;
-  margin-left: 194px;
-
   text-align: left;
   font: normal normal bold 28px/25px Noto Sans TC;
   letter-spacing: 0.56px;
   color: #14292b;
+  margin-left: 194px;
 }
 
 .grid {
+  padding: 60px 0px 0px 180px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 .card {
-  padding: 10px;
   width: 400px;
   height: 400px;
-  margin-left: 176px;
-  margin-bottom: 68px;
-
-  background-color: white;
-  border-radius: 10px;
-
+  padding: 10px;
+  margin: 0px 100px 55px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  background-color: white;
+  border-radius: 10px;
 }
 
 .imgbox {
