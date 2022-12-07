@@ -1,8 +1,20 @@
 import Image from "next/image";
 
 import styles from "../../styles/indexpages.module.css";
+import contents from "../../../contents.js";
 
 function NewsPage() {
+  const allnews = contents[0].main[4].content;
+
+  const newsList = allnews.map((v) => {
+    return (
+      <a key={v.id} href="" className={styles.newsticket}>
+        <h2>{v.title}</h2>
+        <label>公告日期 {v.date}</label>
+      </a>
+    );
+  });
+
   return (
     <main className={styles.main}>
       <span className={styles.banner}>
@@ -37,42 +49,7 @@ function NewsPage() {
             <Image src="/search.svg" alt="search btn" width={17} height={17} />
           </button>
         </div>
-        <div className={styles.flexbox}>
-          <a href="" className={styles.newsticket}>
-            <h2>公告標題名稱</h2>
-            <label>公告日期</label>
-          </a>
-        </div>
-        <div className={styles.flexbox}>
-          <a href="" className={styles.newsticket}>
-            <h2>公告標題名稱</h2>
-            <label>公告日期</label>
-          </a>
-        </div>
-        <div className={styles.flexbox}>
-          <a href="" className={styles.newsticket}>
-            <h2>公告標題名稱</h2>
-            <label>公告日期</label>
-          </a>
-        </div>
-        <div className={styles.flexbox}>
-          <a href="" className={styles.newsticket}>
-            <h2>公告標題名稱</h2>
-            <label>公告日期</label>
-          </a>
-        </div>
-        <div className={styles.flexbox}>
-          <a href="" className={styles.newsticket}>
-            <h2>公告標題名稱</h2>
-            <label>公告日期</label>
-          </a>
-        </div>
-        <div className={styles.flexbox}>
-          <a href="" className={styles.newsticket}>
-            <h2>公告標題名稱</h2>
-            <label>公告日期</label>
-          </a>
-        </div>
+        <div className={styles.flexbox}>{newsList}</div>
       </div>
     </main>
   );
