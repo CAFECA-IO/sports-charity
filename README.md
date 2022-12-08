@@ -28,11 +28,6 @@ npm run build
 pm2 restart npm --name "sports-charity" -- start
 ```
 
-## How to Publish
-```shell
-npm run publish
-```
-
 ## Multi Language
 ```
 |_ src
@@ -41,6 +36,11 @@ npm run publish
         |   |_ common.json
         |_ zh
             |_ common.json
+```
+
+## How to Publish
+```shell
+npm run publish
 ```
 
 ## Mockup
