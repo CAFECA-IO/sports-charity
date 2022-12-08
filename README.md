@@ -1,6 +1,7 @@
 # sports-charity
 
-Sports Public Welfare Platform
+Sports Public Welfare Platform  
+[DEMO SITE](https://sports-charity-kuekb3db6-cafeca.vercel.app/)
 
 ## Environment
 
@@ -25,6 +26,16 @@ vi contents.js
 ```shell
 npm run build
 pm2 restart npm --name "sports-charity" -- start
+```
+
+## Multi Language
+```
+|_ src
+    |_ locales
+        |_ en
+        |   |_ common.json
+        |_ zh
+            |_ common.json
 ```
 
 ## Mockup
