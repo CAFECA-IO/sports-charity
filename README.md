@@ -28,6 +28,11 @@ npm run build
 pm2 restart npm --name "sports-charity" -- start
 ```
 
+## How to Publish
+```shell
+npm run publish
+```
+
 ## Multi Language
 ```
 |_ src
