@@ -1,9 +1,13 @@
 .header {
-  min-width: 1680px;
   height: 108px;
   background-color: #f1f7f7;
   display: flex;
-  padding: 10px 110px 5px 20px;
+  padding: 10px 0px 5px 0px;
+}
+
+.logo {
+  padding: 0;
+  margin: 0;
 }
 
 .navl,
@@ -27,7 +31,6 @@
   display: flex;
   float: right;
   align-items: center;
-  margin-top: 10px;
 }
 
 .navl li,
@@ -36,7 +39,7 @@
 }
 
 .navl li {
-  margin-left: 120px;
+  margin-left: 20px;
 }
 
 .navr li {
@@ -158,4 +161,49 @@
 
 .subnav:hover .subnavcontent {
   display: block;
+}
+
+.header input {
+  display: none;
+}
+
+.burgerbtn {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .navr {
+    display: none;
+  }
+
+  .burgerbtn {
+    width: 50px;
+    height: 50px;
+    display: block;
+    align-self: center;
+    margin-right: 20px;
+
+    background-color: #86acaf;
+    border-radius: 2px;
+  }
+
+  .burgerbtn span {
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    display: block;
+    overflow: hidden;
+  }
+
+  .burgerbtn::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    margin-left: 3px;
+    margin-top: 24px;
+    border-radius: 1px;
+    background-color: white;
+    box-shadow: 0px 10px 0px white, 0px -10px 0px white;
+  }
 }

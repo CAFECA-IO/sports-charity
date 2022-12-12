@@ -12,11 +12,15 @@ function MainNavigation() {
         <meta name="description" content="Sports Public Welfare Platform" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <input type="checkbox" id="menu_control" />
+
       <nav className={styles.navl}>
         <ul>
           <li>
             <Link href="/">
               <Image
+                className={styles.logo}
                 src="/omni_logo.png"
                 alt="OMNI SPORTS Logo"
                 width={150}
@@ -97,6 +101,9 @@ function MainNavigation() {
           </li>
         </ul>
       </nav>
+      <label htmlFor="menu_control" className={styles.burgerbtn}>
+        <span>選單</span>
+      </label>
     </header>
   );
 }

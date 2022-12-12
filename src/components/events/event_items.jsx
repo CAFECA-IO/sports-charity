@@ -1,14 +1,14 @@
-import styles from "./event_list.module.css";
+import styles from "./event_items.module.css";
 
-function EventItems() {
+function EventItems(props) {
   return (
-    <a href="" className={styles.card}>
+    <a href={`/event/${props.id}`} className={styles.card}>
       <div className={styles.imgbox}>
         <img src={props.image} alt={props.id}></img>
       </div>
       <h2>{props.title}</h2>
       <p className={styles.intro}>{props.description}</p>
-      <p className={styles.sort}>{props.class}</p>
+      <p className={styles.sort}>{props.type}</p>
     </a>
   );
 }

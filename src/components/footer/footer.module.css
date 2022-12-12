@@ -1,5 +1,4 @@
 .footer {
-  min-width: 1680px;
   display: flex;
   flex-direction: column;
 
@@ -76,6 +75,6 @@
   letter-spacing: 0.12px;
   color: #ffffff;
   opacity: 1;
-  margin-right: 230px;
+  margin-right: 65px;
   white-space: nowrap;
 }

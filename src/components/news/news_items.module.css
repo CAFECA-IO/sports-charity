@@ -1,0 +1,88 @@
+.newsbox {
+  width: 450px;
+  height: 163px;
+  margin: 0px 50px 50px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: left;
+  background-color: none;
+  text-decoration: none;
+}
+
+.imgbox {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.imgbox img {
+  padding: 0;
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+
+  transition: 0.5s;
+  object-fit: cover;
+}
+
+.arrow {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+
+.arrowred {
+  position: relative;
+  top: 0px;
+  left: -10px;
+  z-index: -1;
+}
+
+.newsbox:hover .imgbox img {
+  transform: scale(1.2);
+}
+.newsbox:hover h4 {
+  color: #6d3938;
+}
+.newsbox:hover .arrow {
+  opacity: 0;
+}
+
+.textarea {
+  margin-left: 24px;
+  width: 260px;
+}
+
+.textarea h2 {
+  margin: 0;
+  text-align: left;
+  font: normal normal bold 20px Noto Sans TC;
+  letter-spacing: 0.35px;
+  color: #14292b;
+}
+
+.textarea h4 {
+  text-align: left;
+  font: normal normal bold 14px/19px Noto Sans TC;
+  letter-spacing: 0.16px;
+  color: #14292b;
+}
+
+.textarea p {
+  text-align: left;
+  font: normal normal normal 14px/23px Noto Sans TC;
+  letter-spacing: 0.48px;
+
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2; /*行數*/
+  -webkit-box-orient: vertical;
+  white-space: normal;
+
+  color: #646f71;
+}
